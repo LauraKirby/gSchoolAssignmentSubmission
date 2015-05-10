@@ -12,11 +12,11 @@
 // console.log(sumOfRange(10)); 
 
 //use recursion to find solution 
-function sumOfRangeR (x){
-if (n === 0) {
-	return 1; 
+module.exports = { 
+	sumOfRange: function sumOfRangeR (x){
+		if (x === 0) {
+			return 1; 
+		}
+		return (x + sumOfRangeR(x-1));
+	}
 }
-return (x + sumOfRangeR(x-1));
-
-}
-sumOfRange(10);
